@@ -16,7 +16,7 @@ class App extends Component {
 
   getData = async () => {
     try {
-      const response = await fetch(process.env.REACT_APP_BACKEND_URL + '/api/v1/resource')
+      const response = await fetch(process.env.REACT_APP_BACKEND_URL + 'api/v1/resource')
       const data = await response.json();
       console.log(data);
     } catch (error) {
